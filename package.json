@@ -1,0 +1,5 @@
+"dependencies": {
+  "express": "4.10",
+  "angularjs": "0.0.1",
+  "sequelize":   "2.0.0"
+}
