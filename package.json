@@ -1,5 +1,4 @@
 "dependencies": {
   "express": "~4.0.0",
-  "angularjs": "~0.0.1",
   "mongoose":   "~3.8.19"
 }
