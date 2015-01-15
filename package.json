@@ -1,4 +1,9 @@
-"dependencies": {
-  "express": "~4.0.0",
-  "mongoose":   "~3.8.19"
+{
+	"version": "0.0.1",
+	"name": "nerp",
+	"dependencies": {
+		"express": "~4.0.0",
+		"mongoose": "~3.8.19",
+		"underscore": "1.7.0"
+	}
 }

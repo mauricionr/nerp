@@ -1,11 +1,19 @@
-// Init app
+// Initialize base requirements
 var express = require('express');
-var app = express();
 var fs = require('fs');
 
-// Init routes
-app.use('/', require('./routes/index'));
-app.use('/', require('./routes/config'));
-app.use('/', require('./routes/auth'));
+// Define main module
+global.nerp = {
+	// Define reference for current nerp instance
+	app: express(),
+	// Set current directory as root server directory
+	__server_base: __dirname + '/',
+};
 
-app.listen(8080);
+// Default modules
+nerp.tools = require('./tools');
+nerp.models = require('./models');
+nerp.controllers = require('./controllers');
+
+// Server start
+nerp.app.listen(8888);
